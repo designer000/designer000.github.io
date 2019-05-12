@@ -21,14 +21,6 @@
     <!-- time -->
 	<input id="time" type="text" >
 
-<style>
-	input{
-		width: 100%;
-		text-align: center;
-		border: 1px solid gray;
-		padding: 15px;
-	}
-</style>
 
 <script>
 
@@ -68,8 +60,10 @@ jQuery('#datetimepicker').datetimepicker({
 	  //    },
 
 	     // in case
-	     closeOnDateSelect:true,
-	     validateOnBlur:false
+// 	     closeOnDateSelect:true,
+// 	     validateOnBlur:false
+	openOnFocus: true
+
 
 
 	});
@@ -95,9 +89,11 @@ jQuery('#time').datetimepicker({
 
 
   		 timepickerScrollbar: true,
-  		 value: 'current_time'
+  		 value: 'current_time',
   		 // 'disableTimeRanges': [['12pm', getCurrentTime(new Date())]]
   		 // onSelectTime: function () {alert("fdf")}
+	 	openOnFocus: true
+
 
 
 // onChangeDateTime: function () {  jQuery('#time').datetimepicker({minTime: 'current_time'});     }
